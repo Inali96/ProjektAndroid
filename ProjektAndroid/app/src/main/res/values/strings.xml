@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Multimedia i rozrywka</string>
+    <string name="grab">Rzuć kostką</string>
+    <string name="kkb">Zagraj w kółko krzyżyk</string>
+    <string name="tesktnamoweb">Konwersja tekstu na mowę</string>
+    <string name="paintb">Szkicownik</string>
+    <string name="textView"></string>
+    <string name="pknb">Papier Kamień Nożyce</string>
+    <string name="button11">Mapy</string>
+    <string name="button12">Zapisane adresy</string>
+    <string name="button13">Nawigacja</string>
+    <string name="button14">Pokaż na mapie</string>
+</resources>

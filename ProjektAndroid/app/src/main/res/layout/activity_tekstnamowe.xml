@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1B1B"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.zaliczenie.tekstnamowe.TekstnamoweActivity">
+
+    <TextView
+        android:layout_width="123dp"
+        android:layout_height="27dp"
+        android:text="Wysokość głosu"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/seek_bar_speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_pitch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:progress="50"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="136dp"
+        android:layout_height="24dp"
+        android:text="Prędkość czytania"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/seek_bar_pitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975" />
+
+    <SeekBar
+        android:id="@+id/seek_bar_speed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="381dp"
+        android:layout_height="104dp"
+        android:hint="Wpisz tekst"
+        android:textColor="#F8F5F5"
+        android:textColorHint="#F3ECEC"
+        app:layout_constraintBottom_toTopOf="@+id/button_speak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.949" />
+
+    <Button
+        android:id="@+id/button_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#48A8A8"
+        android:enabled="false"
+        android:text="Konwertuj"
+        android:textColor="#EFE6E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

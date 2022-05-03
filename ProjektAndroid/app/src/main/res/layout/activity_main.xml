@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/emailb"
+        android:layout_width="87dp"
+        android:layout_height="71dp"
+        android:onClick="email"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        app:srcCompat="@drawable/pngkey_com_email_icon_white_png_9311379" />
+
+    <ImageView
+        android:id="@+id/nrb"
+        android:layout_width="87dp"
+        android:layout_height="71dp"
+        android:background="#00DF1E1E"
+        android:onClick="call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+    <Button
+        android:id="@+id/grab"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:background="#1425C5ED"
+        android:backgroundTint="#32DC1E"
+        android:text="@string/grab"
+        android:textColor="#F3F5F6"
+        app:iconTint="#5F13ED"
+        app:layout_constraintBottom_toTopOf="@+id/kkb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.775" />
+
+    <Button
+        android:id="@+id/pknb"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="44dp"
+        android:background="#EDE9E9"
+        android:text="@string/pknb"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/emailb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paintb"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <Button
+        android:id="@+id/kkb"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="48dp"
+        android:background="#51FFFFFF"
+        android:text="@string/kkb"
+        android:textColor="#EBF2F4"
+        app:iconTint="#BD2222"
+        app:layout_constraintBottom_toTopOf="@+id/tekstnamoweb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/tekstnamoweb"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="36dp"
+        android:background="#86FFFFFF"
+        android:text="@string/tesktnamoweb"
+        android:textColor="#F3F5F6"
+        app:layout_constraintBottom_toTopOf="@+id/paintb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+    <Button
+        android:id="@+id/paintb"
+        style="@android:style/Widget.Holo.Button.Inset"
+        android:layout_width="380dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="44dp"
+        android:background="#B7FFFFFF"
+        android:text="@string/paintb"
+        android:textColor="#ECF3F4"
+        app:layout_constraintBottom_toTopOf="@+id/emailb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <ImageView
+        android:id="@+id/gallerybb"
+        android:layout_width="87dp"
+        android:layout_height="71dp"
+        android:background="#00BC2323"
+        android:onClick="galeria"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.848"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.91"
+        app:srcCompat="@drawable/pngkey_com_gallery_icon_png_505769" />
+
+    <TextView
+        android:id="@+id/twelcome"
+        android:layout_width="214dp"
+        android:layout_height="52dp"
+        android:textAlignment="center"
+        android:textColor="#D5E6ED"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/grab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <ImageView
+        android:id="@+id/locb"
+        android:layout_width="87dp"
+        android:layout_height="72dp"
+        android:onClick="mapy"
+        app:layout_constraintBottom_toTopOf="@+id/grab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
